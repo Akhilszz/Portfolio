@@ -56,7 +56,7 @@ button:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .contact-container {
-        width: 90%;
+        width: 80%;
         padding-bottom: 60px; /* Adjust padding for small screens */
     }
 
@@ -66,20 +66,20 @@ button:hover {
 
     .form-group input,
     .form-group textarea {
-        width: 90%; /* Slightly narrower for small screens */
+        width: 80%; /* Slightly narrower for small screens */
         font-size: 14px; /* Smaller font size for input and textarea */
     }
 
     button {
-        padding: 8px 12px; /* Smaller button size */
+        padding: 10px 19px; /* Smaller button size */
         font-size: 14px; /* Smaller button font size */
     }
 }
 
 @media (max-width: 480px) {
     .contact-container {
-        width: 100%;
-        padding: 15px; /* Further reduce padding */
+        width: 80%;
+        padding: 10px; /* Further reduce padding */
         padding-bottom: 80px; /* Adjust padding for very small screens */
     }
 
