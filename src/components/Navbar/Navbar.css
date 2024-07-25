@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    box-shadow: 1px 1px 1px gray;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.nav-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+li:hover {
+    border-bottom: 2px solid red;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.hide-menu {
+    display: none;
+}
+
+.show-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: white;
+    width: 200px;
+    box-shadow: 1px 1px 5px gray;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+}
+
+.show-menu li {
+    padding: 10px;
+}
+
+.hamburger-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.hamburger-open span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+@media (max-width: 800px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .show-menu {
+        /* Optional: Add transition for a smoother opening/closing effect */
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .hide-menu {
+        /* Optional: Add transition for a smoother hiding effect */
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(-20px);
+    }
+}
