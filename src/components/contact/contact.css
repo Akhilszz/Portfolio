@@ -4,8 +4,7 @@
     margin: auto;
     padding: 20px;
     text-align: center;
-    padding-bottom: 80px;
-    /* Add padding to create space for the sidebar */
+    padding-bottom: 80px; /* Add padding to create space for the sidebar */
 }
 
 .contact-form {
@@ -26,7 +25,7 @@
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 100%; /* Default width for larger screens */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -44,6 +43,10 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 16px; /* Default font size for larger screens */
+    width: auto; /* Fit width to content */
+    margin: 0 auto; /* Center the button */
+    display: inline-block; /* Ensure button is inline with text */
 }
 
 button:hover {
@@ -54,14 +57,44 @@ button:hover {
 @media (max-width: 768px) {
     .contact-container {
         width: 90%;
-        padding-bottom: 100px;
+        padding-bottom: 60px; /* Adjust padding for small screens */
+    }
+
+    .contact-form {
+        gap: 10px; /* Reduce gap between form elements */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 90%; /* Slightly narrower for small screens */
+        font-size: 14px; /* Smaller font size for input and textarea */
+    }
+
+    button {
+        padding: 8px 12px; /* Smaller button size */
+        font-size: 14px; /* Smaller button font size */
     }
 }
 
 @media (max-width: 480px) {
     .contact-container {
         width: 100%;
-        padding-bottom: 100px;
-        /* Increase padding for very small screens */
+        padding: 15px; /* Further reduce padding */
+        padding-bottom: 80px; /* Adjust padding for very small screens */
+    }
+
+    .contact-form {
+        gap: 8px; /* Further reduce gap between form elements */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 80%; /* More narrow for very small screens */
+        font-size: 12px; /* Even smaller font size for input and textarea */
+    }
+
+    button {
+        padding: 6px 10px; /* Even smaller button size */
+        font-size: 12px; /* Even smaller button font size */
     }
 }
