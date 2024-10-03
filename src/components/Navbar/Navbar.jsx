@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../Assets/logo.jpg';
+import logo from '../Assets/logo.jpeg';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';

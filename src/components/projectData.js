@@ -8,8 +8,23 @@ import kfc_img3 from './Assets/kfc_img3.png'
 
 import todo from './Assets/todo_img1.png'
 
+import safebite from './Assets/safebite.png'
+import calculator from './Assets/calculator.png'
+
 
 export const projectData = [
+    {
+        img1: safebite,
+        Description: 'This a Full Stack project build using MERN',
+        LiveLink: 'https://safe-bite-r2cj.vercel.app',
+        Github: 'https://github.com/Akhilszz/SafeBite'
+    },
+    {
+        img1: calculator,
+        Description: 'This a Full Stack project build using MERN',
+        LiveLink: 'https://calculator-frontend-pi.vercel.app',
+        Github: 'https://github.com/Akhilszz/calculator'
+    },
     {
         img1: e_cart_img1,
         img2: e_cart_img2,
